@@ -1,10 +1,14 @@
+var player1Name = prompt("Enter Player 1 Name.");
+var player2Name = prompt("Enter Player 2 Name.");
+
+document.querySelector(".p1").innerHTML = player1Name
+document.querySelector(".p2").innerHTML = player2Name
+
+
 var randomNumber1= (Math.floor(Math.random()*6)+1)
 var randomImage1= "images/dice"+ randomNumber1 +".png"
 var image1 = document.querySelectorAll("img")[0]
 image1.setAttribute("src", randomImage1)
-
-
-
 
 
 
@@ -18,17 +22,15 @@ image2.setAttribute("src", randomImage2)
 
 
 if (randomImage1 > randomImage2){
-  document.querySelector("h1").innerHTML = ("🏁-Faran Wins")
+  document.querySelector("h1").innerHTML = player1Name
 }
 else
 if (randomImage2 > randomImage1){
-  document.querySelector("h1").innerHTML = ("Zeeshan Wins-🏁")
+  document.querySelector("h1").innerHTML = player2Name
 }
 else {
   document.querySelector("h1").innerHTML = ("!!--Draw--!!")
 }
-
-
 
 
 
