@@ -22,11 +22,11 @@ image2.setAttribute("src", randomImage2)
 
 
 if (randomImage1 > randomImage2){
-  document.querySelector("h1").innerHTML = ("🏁" + player1Name + "wins")
+  document.querySelector("h1").innerHTML = ("🏁 " + player1Name + " wins")
 }
 else
 if (randomImage2 > randomImage1){
-  document.querySelector("h1").innerHTML = (player2Name + "wins 🏁")
+  document.querySelector("h1").innerHTML = (player2Name + " wins 🏁")
 }
 else {
   document.querySelector("h1").innerHTML = ("!!--Draw--!!")
